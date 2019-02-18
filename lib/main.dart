@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes : {
         // "/" : (context) => FirstScreen(),
-        "/" : (context) => MyCustomForm(),
+        // "/" : (context) => MyCustomForm(),
+        "/" : (context) => FirstScreen(),
         "/second" : (context) => SecondScreen(),
         // "/detail" : (context) => DetailScreen(title: 'Detail',) no need for goto with parameter
       }
