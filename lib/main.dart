@@ -4,6 +4,7 @@ import './ui/first_screen.dart';
 import './ui/second_screen.dart';
 import './ui/detail_screen.dart';
 import './ui/my_custom_form.dart';
+import './ui/list_data.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,8 +22,9 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes : {
         // "/" : (context) => FirstScreen(),
+        // "/" : (context) => ListData(),
+        "/" : (context) => SecondScreen(),
         // "/" : (context) => MyCustomForm(),
-        "/" : (context) => FirstScreen(),
         "/second" : (context) => SecondScreen(),
         // "/detail" : (context) => DetailScreen(title: 'Detail',) no need for goto with parameter
       }
