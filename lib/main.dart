@@ -5,6 +5,10 @@ import './ui/second_screen.dart';
 import './ui/detail_screen.dart';
 import './ui/my_custom_form.dart';
 import './ui/list_data.dart';
+import './ui/todo_screen.dart';
+
+import './ui/login_screen.dart';
+import './ui/register_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,10 +27,14 @@ class MyApp extends StatelessWidget {
       routes : {
         // "/" : (context) => FirstScreen(),
         // "/" : (context) => ListData(),
-        "/" : (context) => SecondScreen(),
+        // "/" : (context) => SecondScreen(),
         // "/" : (context) => MyCustomForm(),
-        "/second" : (context) => SecondScreen(),
+        // "/second" : (context) => SecondScreen(),
         // "/detail" : (context) => DetailScreen(title: 'Detail',) no need for goto with parameter
+        "/" : (context) => TodoScreen(),
+
+        // "/": (context) => LoginScreen(),
+        // "/register": (context) => RegisterScreen(),
       }
     );
   }
