@@ -10,6 +10,10 @@ import './ui/todo_screen.dart';
 import './ui/login_screen.dart';
 import './ui/register_screen.dart';
 
+import './ui/book_screen.dart';
+
+import './ui/list_book.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -31,10 +35,15 @@ class MyApp extends StatelessWidget {
         // "/" : (context) => MyCustomForm(),
         // "/second" : (context) => SecondScreen(),
         // "/detail" : (context) => DetailScreen(title: 'Detail',) no need for goto with parameter
-        "/" : (context) => TodoScreen(),
+        // "/" : (context) => TodoScreen(),
 
         // "/": (context) => LoginScreen(),
         // "/register": (context) => RegisterScreen(),
+
+        // "/": (context) => BookScreen(),
+
+        "/": (context) => ListBook(),
+
       }
     );
   }
